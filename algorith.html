@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <script>
+        let set1 = [3, 1, 7, 5];
+        let set2 = [2, 4, 1, 9, 3];
+        let sum1 = 0;
+        let sum2 = 0;
+        for (let i = 0; i < set1.length; i++) {
+            for (let j = 0; j < set2.length; j++) {
+                if (set1[i] === set2[j]) {
+                    sum1 += (set1[i] + set2[j])
+                }
+            }
+        }
+        console.log(sum1)
+
+        for (let i = 0; i < set1.length; i++) {
+            if (!set2.includes(set1[i])) {
+                sum2 += set1[i]
+            }
+        }
+
+        for (let j = 0; j < set2.length; j++) {
+            if (!set2.includes(set2[j]))
+                sum2 += set2[j]
+        }
+
+        console.log(sum2)
+    </script>
+</body>
+
+</html>
